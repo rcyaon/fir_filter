@@ -1,21 +1,13 @@
-abandoned project
-
 ![](https://github.com/rcyaon/firfilter/blob/main/sketch.png?raw=true)
 
-gonna simulate on the tang nano 20k when i'md oen
+### Testing flow
+1. Generate real coefficients (replaces placeholders in `fir_filter.v`): `make coeffs`
 
-reminder i can run `gw_sh` for resource report 
+2. Run simulation: `make sim`
 
-## Testing flow
-### 1. Generate real coefficients (replaces placeholders in `fir_filter.v`)
+3. View waveforms: `make wave`
 
-make coeffs
+4. Python golden reference model generation to compare: `make golden`
 
-### 2. Run simulation
-make sim
-
-### 3. View waveforms
-make wave
-
-### 4. Python golden reference model generation to compare
-make golden
+### Misc
+`gw_sh` for resource report 
